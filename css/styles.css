@@ -1,0 +1,213 @@
+/*selector universal*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box; }
+
+/*variables*/
+/* modifico body*/
+body {
+  background-image: url("../imagenes/imagen.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+/*Aplicando nesting en el header aplicando propiedades al index y*/
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  box-shadow: 12px 15px 6px 3px  #ced4da;
+  width: 100%; }
+  .contenedor .logo {
+    background-position: cover;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: auto; }
+  .contenedor .navegacion {
+    width: 100%; }
+    .contenedor .navegacion .cajaUl {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      width: 80%;
+      list-style-type: none;
+      margin: auto; }
+      .contenedor .navegacion .cajaUl li a {
+        text-decoration: none;
+        padding: 0.4rem;
+        margin: 0.4rem;
+        color: #8c2721;
+        font-size: 1.5rem; }
+
+/*Aplicando grid a la imagen principal*/
+section .flexImagen {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 100% auto;
+  column-gap: 1rem;
+  margin-top: 0.2rem; }
+  section .flexImagen img {
+    padding: 0.3rem;
+    margin: 0.5rem;
+    border: 0.125rem solid #676666;
+    border-radius: 1rem;
+    width: 100%; }
+  section .flexImagen p {
+    background-color: #f3f4f4;
+    box-shadow: 12px 15px 6px 3px #b7b7a4;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 1.5rem; }
+
+section div h1 {
+  text-align: center;
+  text-shadow: 3px 3px 4px #393a39;
+  color: #070707;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  margin: 1.5rem; }
+
+section div p {
+  background-color: #f3f4f4;
+  box-shadow: 12px 15px 6px 3px #b7b7a4;
+  padding: 1.5rem;
+  margin: 1rem;
+  font-size: 1.5rem; }
+
+/*implemento grid en el index*/
+.gridContainer {
+  width: 100% auto;
+  padding: 1rem;
+  margin: 0.5rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 0.5rem;
+  grid-template-areas: "implementar capacitar" "auditar tramitar"; }
+  .gridContainer .implementar {
+    grid-area: implementar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 0.12rem solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #14C38E; }
+    .gridContainer .implementar .medidaImagenes {
+      width: 100%;
+      border: solid #f2f4f4; }
+    .gridContainer .implementar h2 {
+      text-align: center;
+      text-shadow: 3px 3px 4px #393a39;
+      color: #070707;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      padding: 1,6rem;
+      margin: 1rem; }
+    .gridContainer .implementar p {
+      background-color: #f3f4f4;
+      box-shadow: 12px 15px 6px 3px #b7b7a4;
+      padding: 1.5rem;
+      margin: 1rem;
+      font-size: 1.5rem; }
+  .gridContainer .capacitar {
+    grid-area: capacitar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 0.12rem solid grey;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #14C38E; }
+    .gridContainer .capacitar .medidaImagenes {
+      width: 100%;
+      border: solid #f2f4f4; }
+    .gridContainer .capacitar h2 {
+      text-align: center;
+      text-shadow: 3px 3px 4px #393a39;
+      color: #070707;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      padding: 1,6rem;
+      margin: 1rem; }
+    .gridContainer .capacitar p {
+      background-color: #f3f4f4;
+      box-shadow: 12px 15px 6px 3px #b7b7a4;
+      padding: 1.5rem;
+      margin: 1rem;
+      font-size: 1.5rem; }
+  .gridContainer .auditar {
+    grid-area: auditar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 0.12rem solid grey;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #14C38E; }
+    .gridContainer .auditar .medidaImagenes {
+      width: 100%;
+      border: solid #f2f4f4; }
+    .gridContainer .auditar h2 {
+      text-align: center;
+      text-shadow: 3px 3px 4px #393a39;
+      color: #070707;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      padding: 1,6rem;
+      margin: 1rem; }
+    .gridContainer .auditar p {
+      background-color: #f3f4f4;
+      box-shadow: 12px 15px 6px 3px #b7b7a4;
+      padding: 1.5rem;
+      margin: 1rem;
+      font-size: 1.5rem; }
+  .gridContainer .tramitar {
+    grid-area: tramitar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 0.12rem solid grey;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #14C38E; }
+    .gridContainer .tramitar .medidaImagenes {
+      width: 100%;
+      border: solid #f2f4f4; }
+    .gridContainer .tramitar h2 {
+      text-align: center;
+      text-shadow: 3px 3px 4px #393a39;
+      color: #070707;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      padding: 1,6rem;
+      margin: 1rem; }
+    .gridContainer .tramitar p {
+      background-color: #f3f4f4;
+      box-shadow: 12px 15px 6px 3px #b7b7a4;
+      padding: 1.5rem;
+      margin: 1rem;
+      font-size: 1.5rem; }
+
+/*Aplico flexbox  a contenedor video*/
+.flexVideo {
+  display: flex;
+  justify-content: center;
+  width: 100% auto;
+  column-gap: 1rem;
+  margin-top: 0.2rem; }
