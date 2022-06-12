@@ -1,0 +1,653 @@
+
+/* selector universal */
+*{
+
+  padding: 0;
+
+  margin: 0;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  box-sizing: border-box;
+
+}
+
+/* modificacion del body */
+
+body{
+
+  background-image: url("../imagenes/imagen.png");
+
+  background-size: 100%;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+}
+
+
+
+/* Agregando propiedades al index */
+
+/* utilizo flexbox en el header */
+
+.contenedor{ 
+  
+  display: flex;
+  
+  justify-content: center;
+
+  align-items: center;
+  
+  box-shadow: 12px 15px 6px 3px #b7b7a4;
+  
+  width: 100%;
+
+}
+/* aplicacion de propiedades a toda la parte de la navegacion */
+
+.navegacion{
+  
+  width: 90%;
+
+}
+
+.cajaUl{
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  
+  align-items: center;
+  
+  width: 80%;
+
+}
+
+nav ul{
+
+  list-style-type: none;
+
+  margin: auto;
+  
+}
+
+.menu{
+  
+  text-decoration: none;
+
+  padding: 0.4rem;
+
+  margin: 0.4rem;
+  
+  color:#8c2721;
+
+  font-size: 1.3rem;
+
+}
+
+
+a:hover{
+  background-color:rgba(240, 249, 240, 0.903);
+  color: #14C38E;
+  border-radius: 10px;
+
+
+}
+a:active{
+  color: rgb(235, 24, 24);
+}
+
+
+.logo{
+
+  background-position: cover;
+
+  padding: 0.5rem;
+
+  margin:0.5rem;
+
+}
+/* Aplicacion grid  a la imagen principal de las pagina */
+
+.flexImagen{
+
+  display: flex;
+
+  flex-direction:row-reverse;
+
+  justify-content: center;
+
+  width: 100% auto;
+
+  column-gap: 1rem;
+
+  margin-top: 0.2rem;
+
+}
+
+.imagen{
+
+  padding: 0.1rem;
+
+  margin: 0.5rem;
+
+  border-radius: 1rem;
+
+  width:50%;
+}
+
+/* implemento grid en el index*/
+
+.gridContainer{
+
+  width: 100% auto;
+
+  height: 100% auto;
+
+  padding: 1rem;
+
+  margin:0.5rem;
+
+  display: grid;
+
+  grid-template-rows: repeat(2,1fr);
+
+  grid-template-columns: repeat(2,1fr);
+  
+  justify-items: center;
+
+  gap: 0.5rem;
+
+  grid-template-areas: 
+  "implementar capacitar" "auditar tramitar";
+  
+}
+
+
+.implementar{
+  
+  grid-area: implementar;
+
+}
+
+.capacitar{
+  
+  grid-area: capacitar;
+
+}
+
+.auditar{
+ 
+  grid-area: auditar;
+  
+}
+.tramitar{
+
+  grid-area: tramitar;
+ 
+}
+
+/*  se aplica flebox a las areas del grid index, servicios */
+
+.implementar, .capacitar, .auditar, .tramitar, .sistemas, .auditorias, .capacitacion, .tramites{
+  
+  display: flex;
+  
+  flex-direction:column;
+  
+  align-items:flex-start;
+  
+  width: 100%;
+
+  height: 100%;
+
+}
+
+/* se modifica tamaño de imagenes del grid */
+.medidaImagenes{
+
+  padding: 0.1rem;
+
+  margin: 0.5rem;
+
+  border-radius: 1rem;
+
+  height: auto;
+
+  width: auto;
+
+  max-width: 100%;
+
+  max-height:100% ;
+  
+
+}
+
+/* se aplican propiedades  a las areas del grid a la web index, servicios y a la seccion de videos introductorios al mundo de la ingenieria alimentaria */
+
+.implementar, .capacitar, .auditar, .tramitar, .cajaVideo, .sistemas, .auditorias, .capacitacion, .tramites, .asesor{
+
+  border: 0.12rem solid grey;
+
+  border-radius: 1rem;
+
+  padding: 1rem;
+
+  background-color:#14C38E;
+
+}
+/* Se aplica flebox a al contenedor de videos */
+
+.flexVideo{
+
+  width: 100% auto;
+
+  padding: 1rem;
+
+  margin:0.5rem;
+
+  display:flex;
+
+  align-items:center;
+
+}
+
+  
+
+/* Se modifica tamaño de los videos */
+
+.medidaVideo{
+
+  width: 100%;
+  
+  padding: 0.5rem ;
+
+  margin:0.3rem ;
+
+}
+
+/* Se aplica flexbox a contenido al gridVideo*/
+.cajaVideo{
+
+  max-width: 100% auto;
+
+  display: flex;
+  
+  justify-content: center;
+
+  align-items: center;
+
+  flex-direction: column;
+
+  padding:0.5rem;
+
+  margin: 0.5rem;
+
+}
+/* se aplica varias propiedades para los 5 hmtl */
+
+.bineta li{
+
+  list-style-type: decimal;
+
+  list-style-position: inside;
+
+}
+
+.binetas li{
+  list-style-type: square;
+
+  list-style-position: inside;
+}
+
+h1,h2{
+
+  text-align: center;
+
+  text-shadow: 3px 3px 4px #ced4da;
+
+  color:#070707;
+
+  text-transform: uppercase;
+
+  font-size: 1.6rem;
+
+  padding: 1.5rem;
+  
+  margin: 1.5rem; 
+}
+
+h1{
+
+  font-size: 1.6rem;
+
+  padding: 1.5rem;
+
+  margin: 1.5 rem;
+
+
+}
+
+h2{
+
+  font-size: 1.3rem;
+
+  padding: 20px;
+
+  margin: 10px;
+
+}
+
+
+p,ul,ol{
+  
+  font-size: 1.3em;
+  
+  color:#000 ;
+
+}
+
+p{
+
+  background-color: #f3f3f4;
+  
+  box-shadow: 12px 15px 6px 3px #b7b7a4;
+
+  padding: 1rem;
+  
+  margin: 1rem;
+
+  font-size: 1.5rem;
+  
+  
+}
+
+
+/* aplicando flexbo en el footer */
+
+.border{
+  
+  background-color: #f3f3f4;
+  
+  box-shadow: 12px 15px 6px 3px #b7b7a4;
+  
+  padding: 1rem;
+  
+  margin: 1rem;
+  
+ 
+}
+.footerContainer{
+  
+  display: flex;
+  
+  justify-content: space-between;
+
+  flex-direction: column-reverse;
+
+}
+
+/* se contruye redes sociales */
+nav ul li a img{
+  width: 30px;
+
+}
+
+
+/* Aplicando grid a la pagina cursos y nosotros*/
+
+.cursosContainer{
+
+  width: 100% auto;
+
+  margin:0.5rem;
+
+  display: grid;
+
+  grid-template-rows: repeat(2,1fr);
+
+  grid-template-columns: repeat(2,1fr);
+  
+  justify-items: center;
+
+  gap: 1rem;
+
+  grid-template-areas:
+  "calidad seguridad"
+  "procesos regulacion";
+  
+}
+
+
+.calidad{
+  
+  grid-area: calidad;
+
+}
+
+.seguridad{
+  
+  grid-area: seguridad;
+
+}
+
+.procesos{
+ 
+  grid-area: procesos;
+  
+}
+.regulacion{
+
+  grid-area:regulacion; 
+ 
+}
+
+/*  se aplica flebox a las areas del grid cursos */
+
+.calidad, .seguridad, .procesos, .regulacion{
+  
+  display: flex;
+  
+  flex-direction:column;
+  
+  align-items: center;
+
+  padding: 1rem;
+
+  margin:0.5rem;
+
+  border-radius: 1.5rem;
+
+  border: 0.12rem solid grey;
+
+
+  background-color:	#14C38E;
+
+}
+
+
+/*  se realiza transformaciones para las redes sociales  */
+nav ul li a img:hover{
+
+  transform: translateX(15px);
+
+  transition: all  0,1s linear ease ease-out;
+
+}
+
+/* creando animacion para el boton comunicate aqui */
+
+.boton{
+  text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #909493;;
+    border-radius: 6px;
+    border: 2px solid #19191a;
+
+  
+}
+.boton:hover{
+  color: #151616;
+  background-color: #ffffff;
+}
+
+
+/* se implementa grid en la web servicios */
+
+.serviciosContainer{
+
+  width: 100% auto;
+
+  margin:1rem;
+
+  display: grid;
+
+  grid-template-rows: repeat(3,1fr);
+
+  grid-template-columns: repeat(2,1fr);
+  
+  justify-items: center;
+
+  gap: 0.5rem;
+
+  grid-template-areas:
+  "sistemas auditorias"
+  "capacitacion tramites"
+  "asesor asesor";
+  
+}
+
+
+.sistemas{
+  
+  grid-area: sistemas;
+  
+  border: 0.12rem solid grey;
+
+  display:flex ;
+  
+  flex-direction: column;
+
+}
+
+.auditorias{
+  
+  grid-area: auditorias;
+
+  border: 0.12rem solid grey;
+
+  display:flex ;
+
+  flex-direction: column;
+  
+
+}
+
+.capacitacion{
+ 
+  grid-area: capacitacion;
+
+  border: 0.12rem solid grey;
+
+  display:flex ;
+
+  flex-direction: column;
+  
+}
+.tramites{
+
+  grid-area:tramites; 
+
+  border: 0.12rem solid grey;
+
+  display:flex ;
+
+  flex-direction: column;
+ 
+}
+
+.asesor{
+
+  grid-area:asesor;
+  border: 0.12rem solid grey;
+  display:flex ;
+  flex-direction: column;
+  
+ 
+}
+
+
+/* aplicando medias queries */
+
+/*  se aplica a todas las web */
+@media screen and (max-width: 600px){
+
+
+  .flexImagen{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gridContainer{
+ 
+    grid-template-areas: 
+    "implementar implementar"
+    "capacitar capacitar"
+    "auditar auditar"
+    "tramitar tramitar"
+    ;
+    
+  }
+
+  .flexVideo{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cursosContainer{
+
+    grid-template-areas:
+    "calidad calidad"
+    "seguridad seguridad"
+    "procesos procesos"
+    "regulacion regulacion";
+    
+  }
+  .serviciosContainer{
+
+    grid-template-areas:
+    "sistemas sistemas"
+    "auditorias auditorias"
+    "capacitacion capacitacion"
+    "tramites tramites"
+    "asesor asesor";
+
+  }
+
+  
+
+
+    
+    
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
