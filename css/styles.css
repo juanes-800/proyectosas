@@ -18,30 +18,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
   box-shadow: 12px 15px 6px 3px  #ced4da;
   width: 100%; }
   .contenedor .logo {
     background-position: cover;
     padding: 0.5rem;
-    margin: 0.5rem;
-    width: auto; }
+    margin: 0.5rem; }
   .contenedor .navegacion {
-    width: 100%; }
-    .contenedor .navegacion .cajaUl {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
-      width: 80%;
-      list-style-type: none;
-      margin: auto; }
-      .contenedor .navegacion .cajaUl li a {
-        text-decoration: none;
-        padding: 0.4rem;
-        margin: 0.4rem;
-        color: #8c2721;
-        font-size: 1.5rem; }
+    width: 90%; }
+  .contenedor .cajaUl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%; }
+  .contenedor .menu {
+    text-decoration: none;
+    padding: 0.4rem;
+    margin: 0.4rem;
+    color: #8c2721;
+    font-size: 1.3rem; }
+  .contenedor a:hover {
+    background-color: rgba(240, 249, 240, 0.903);
+    color: #14C38E;
+    border-radius: 10px; }
+  .contenedor a:active {
+    color: #eb1818; }
 
 /*Aplicando grid a la imagen principal*/
 section .flexImagen {
@@ -49,14 +51,12 @@ section .flexImagen {
   flex-direction: row-reverse;
   justify-content: center;
   width: 100% auto;
-  column-gap: 1rem;
   margin-top: 0.2rem; }
   section .flexImagen img {
     padding: 0.3rem;
     margin: 0.5rem;
-    border: 0.125rem solid #676666;
     border-radius: 1rem;
-    width: 100%; }
+    width: 50%; }
   section .flexImagen p {
     background-color: #f3f4f4;
     box-shadow: 12px 15px 6px 3px #b7b7a4;
@@ -64,7 +64,7 @@ section .flexImagen {
     margin: 1rem;
     font-size: 1.5rem; }
 
-section div h1 {
+section h1 {
   text-align: center;
   text-shadow: 3px 3px 4px #393a39;
   color: #070707;
@@ -73,7 +73,7 @@ section div h1 {
   padding: 1.5rem;
   margin: 1.5rem; }
 
-section div p {
+section p {
   background-color: #f3f4f4;
   box-shadow: 12px 15px 6px 3px #b7b7a4;
   padding: 1.5rem;
@@ -83,29 +83,34 @@ section div p {
 /*implemento grid en el index*/
 .gridContainer {
   width: 100% auto;
+  height: 100% auto;
   padding: 1rem;
   margin: 0.5rem;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   grid-template-areas: "implementar capacitar" "auditar tramitar"; }
   .gridContainer .implementar {
     grid-area: implementar;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    border: 0.12rem solid;
+    height: 100%;
+    border: 0.12rem solid grey;
     border-radius: 1rem;
     padding: 1rem;
     background-color: #14C38E; }
-    .gridContainer .implementar .medidaImagenes {
-      width: 100%;
-      border: solid #f2f4f4; }
-    .gridContainer .implementar h2 {
+    .gridContainer .implementar img {
+      padding: 0.1rem;
+      margin: 0.5rem;
+      border-radius: 1rem;
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      max-height: 100%; }
+    .gridContainer .implementar div h2 {
       text-align: center;
       text-shadow: 3px 3px 4px #393a39;
       color: #070707;
@@ -113,7 +118,7 @@ section div p {
       font-size: 1.3rem;
       padding: 1,6rem;
       margin: 1rem; }
-    .gridContainer .implementar p {
+    .gridContainer .implementar div p {
       background-color: #f3f4f4;
       box-shadow: 12px 15px 6px 3px #b7b7a4;
       padding: 1.5rem;
@@ -123,17 +128,21 @@ section div p {
     grid-area: capacitar;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
+    height: 100%;
     border: 0.12rem solid grey;
     border-radius: 1rem;
     padding: 1rem;
     background-color: #14C38E; }
-    .gridContainer .capacitar .medidaImagenes {
-      width: 100%;
-      border: solid #f2f4f4; }
-    .gridContainer .capacitar h2 {
+    .gridContainer .capacitar img {
+      padding: 0.1rem;
+      margin: 0.5rem;
+      border-radius: 1rem;
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      max-height: 100%; }
+    .gridContainer .capacitar div h2 {
       text-align: center;
       text-shadow: 3px 3px 4px #393a39;
       color: #070707;
@@ -141,7 +150,7 @@ section div p {
       font-size: 1.3rem;
       padding: 1,6rem;
       margin: 1rem; }
-    .gridContainer .capacitar p {
+    .gridContainer .capacitar div p {
       background-color: #f3f4f4;
       box-shadow: 12px 15px 6px 3px #b7b7a4;
       padding: 1.5rem;
@@ -158,10 +167,15 @@ section div p {
     border-radius: 1rem;
     padding: 1rem;
     background-color: #14C38E; }
-    .gridContainer .auditar .medidaImagenes {
-      width: 100%;
-      border: solid #f2f4f4; }
-    .gridContainer .auditar h2 {
+    .gridContainer .auditar img {
+      padding: 0.1rem;
+      margin: 0.5rem;
+      border-radius: 1rem;
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      max-height: 100%; }
+    .gridContainer .auditar div h2 {
       text-align: center;
       text-shadow: 3px 3px 4px #393a39;
       color: #070707;
@@ -169,7 +183,7 @@ section div p {
       font-size: 1.3rem;
       padding: 1,6rem;
       margin: 1rem; }
-    .gridContainer .auditar p {
+    .gridContainer .auditar div p {
       background-color: #f3f4f4;
       box-shadow: 12px 15px 6px 3px #b7b7a4;
       padding: 1.5rem;
@@ -186,10 +200,15 @@ section div p {
     border-radius: 1rem;
     padding: 1rem;
     background-color: #14C38E; }
-    .gridContainer .tramitar .medidaImagenes {
-      width: 100%;
-      border: solid #f2f4f4; }
-    .gridContainer .tramitar h2 {
+    .gridContainer .tramitar img {
+      padding: 0.1rem;
+      margin: 0.5rem;
+      border-radius: 1rem;
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      max-height: 100%; }
+    .gridContainer .tramitar div h2 {
       text-align: center;
       text-shadow: 3px 3px 4px #393a39;
       color: #070707;
@@ -197,7 +216,7 @@ section div p {
       font-size: 1.3rem;
       padding: 1,6rem;
       margin: 1rem; }
-    .gridContainer .tramitar p {
+    .gridContainer .tramitar div p {
       background-color: #f3f4f4;
       box-shadow: 12px 15px 6px 3px #b7b7a4;
       padding: 1.5rem;
@@ -206,8 +225,50 @@ section div p {
 
 /*Aplico flexbox  a contenedor video*/
 .flexVideo {
-  display: flex;
-  justify-content: center;
   width: 100% auto;
-  column-gap: 1rem;
-  margin-top: 0.2rem; }
+  padding: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center; }
+  .flexVideo .cajaVideo {
+    max-width: 100% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 0.12rem solid grey;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #14C38E; }
+    .flexVideo .cajaVideo video {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.3rem; }
+    .flexVideo .cajaVideo h2 {
+      text-align: center;
+      text-shadow: 3px 3px 4px #393a39;
+      color: #070707;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      padding: 1,6rem;
+      margin: 1rem; }
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse; }
+  .footerContainer nav ul {
+    list-style: none; }
+    .footerContainer nav ul li a img {
+      width: 30px; }
+      .footerContainer nav ul li a img:hover {
+        transform: translateX(15px);
+        transition: all 0,2s linear ease ease-out; }
+  .footerContainer p {
+    background-color: #f3f4f4;
+    box-shadow: 12px 15px 6px 3px #b7b7a4;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 1.5rem; }
