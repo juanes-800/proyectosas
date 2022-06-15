@@ -5,7 +5,6 @@
   font-family: 'Times New Roman', Times, serif;
   box-sizing: border-box; }
 
-/*variables*/
 /* modifico body*/
 body {
   background-image: url("../imagenes/imagen.png");
@@ -13,12 +12,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-/*Aplicando nesting en el header aplicando propiedades al index y*/
 .contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 12px 15px 6px 3px  #ced4da;
+  box-shadow: 12px 15px 6px 3px #393a39;
   width: 100%; }
   .contenedor .logo {
     background-position: cover;
@@ -43,9 +41,8 @@ body {
     color: #14C38E;
     border-radius: 10px; }
   .contenedor a:active {
-    color: #eb1818; }
+    color: #8c2721; }
 
-/*Aplicando grid a la imagen principal*/
 section .flexImagen {
   display: flex;
   flex-direction: row-reverse;
@@ -57,30 +54,43 @@ section .flexImagen {
     margin: 0.5rem;
     border-radius: 1rem;
     width: 50%; }
-  section .flexImagen p {
-    background-color: #f3f4f4;
-    box-shadow: 12px 15px 6px 3px #b7b7a4;
-    padding: 1.5rem;
-    margin: 1rem;
-    font-size: 1.5rem; }
 
 section h1 {
   text-align: center;
   text-shadow: 3px 3px 4px #393a39;
-  color: #070707;
+  color: black;
   text-transform: uppercase;
   font-size: 1.6rem;
-  padding: 1.5rem;
+  padding: 1.8rem;
   margin: 1.5rem; }
 
-section p {
+/*implemento grid en el index*/
+.gridContainer .implementar img, .gridContainer .capacitar img, .gridContainer .auditar img, .gridContainer .tramitar img {
+  padding: 0.1rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%; }
+
+.gridContainer .implementar, .gridContainer .capacitar, .gridContainer .auditar, .gridContainer .tramitar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 0.12rem solid #b4b0b0;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #14C38E; }
+
+section .flexImagen p, section p, .gridContainer .implementar div p, .gridContainer .capacitar div p, .gridContainer .auditar div p, .gridContainer .tramitar div p, .footerContainer p {
   background-color: #f3f4f4;
-  box-shadow: 12px 15px 6px 3px #b7b7a4;
+  box-shadow: 12px 15px 6px 3px #393a39;
   padding: 1.5rem;
   margin: 1rem;
   font-size: 1.5rem; }
 
-/*implemento grid en el index*/
 .gridContainer {
   width: 100% auto;
   height: 100% auto;
@@ -93,135 +103,45 @@ section p {
   gap: 1rem;
   grid-template-areas: "implementar capacitar" "auditar tramitar"; }
   .gridContainer .implementar {
-    grid-area: implementar;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    border: 0.12rem solid grey;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: #14C38E; }
-    .gridContainer .implementar img {
-      padding: 0.1rem;
-      margin: 0.5rem;
-      border-radius: 1rem;
-      height: auto;
-      width: auto;
-      max-width: 100%;
-      max-height: 100%; }
+    grid-area: implementar; }
     .gridContainer .implementar div h2 {
       text-align: center;
       text-shadow: 3px 3px 4px #393a39;
-      color: #070707;
+      color: black;
       text-transform: uppercase;
       font-size: 1.3rem;
       padding: 1,6rem;
       margin: 1rem; }
-    .gridContainer .implementar div p {
-      background-color: #f3f4f4;
-      box-shadow: 12px 15px 6px 3px #b7b7a4;
-      padding: 1.5rem;
-      margin: 1rem;
-      font-size: 1.5rem; }
   .gridContainer .capacitar {
-    grid-area: capacitar;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    border: 0.12rem solid grey;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: #14C38E; }
-    .gridContainer .capacitar img {
-      padding: 0.1rem;
-      margin: 0.5rem;
-      border-radius: 1rem;
-      height: auto;
-      width: auto;
-      max-width: 100%;
-      max-height: 100%; }
+    grid-area: capacitar; }
     .gridContainer .capacitar div h2 {
       text-align: center;
       text-shadow: 3px 3px 4px #393a39;
-      color: #070707;
+      color: black;
       text-transform: uppercase;
       font-size: 1.3rem;
       padding: 1,6rem;
       margin: 1rem; }
-    .gridContainer .capacitar div p {
-      background-color: #f3f4f4;
-      box-shadow: 12px 15px 6px 3px #b7b7a4;
-      padding: 1.5rem;
-      margin: 1rem;
-      font-size: 1.5rem; }
   .gridContainer .auditar {
-    grid-area: auditar;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    border: 0.12rem solid grey;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: #14C38E; }
-    .gridContainer .auditar img {
-      padding: 0.1rem;
-      margin: 0.5rem;
-      border-radius: 1rem;
-      height: auto;
-      width: auto;
-      max-width: 100%;
-      max-height: 100%; }
+    grid-area: auditar; }
     .gridContainer .auditar div h2 {
       text-align: center;
       text-shadow: 3px 3px 4px #393a39;
-      color: #070707;
+      color: black;
       text-transform: uppercase;
       font-size: 1.3rem;
       padding: 1,6rem;
       margin: 1rem; }
-    .gridContainer .auditar div p {
-      background-color: #f3f4f4;
-      box-shadow: 12px 15px 6px 3px #b7b7a4;
-      padding: 1.5rem;
-      margin: 1rem;
-      font-size: 1.5rem; }
   .gridContainer .tramitar {
-    grid-area: tramitar;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    border: 0.12rem solid grey;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: #14C38E; }
-    .gridContainer .tramitar img {
-      padding: 0.1rem;
-      margin: 0.5rem;
-      border-radius: 1rem;
-      height: auto;
-      width: auto;
-      max-width: 100%;
-      max-height: 100%; }
+    grid-area: tramitar; }
     .gridContainer .tramitar div h2 {
       text-align: center;
       text-shadow: 3px 3px 4px #393a39;
-      color: #070707;
+      color: black;
       text-transform: uppercase;
       font-size: 1.3rem;
       padding: 1,6rem;
       margin: 1rem; }
-    .gridContainer .tramitar div p {
-      background-color: #f3f4f4;
-      box-shadow: 12px 15px 6px 3px #b7b7a4;
-      padding: 1.5rem;
-      margin: 1rem;
-      font-size: 1.5rem; }
 
 /*Aplico flexbox  a contenedor video*/
 .flexVideo {
@@ -238,7 +158,7 @@ section p {
     flex-direction: column;
     padding: 0.5rem;
     margin: 0.5rem;
-    border: 0.12rem solid grey;
+    border: 0.12rem solid #b4b0b0;
     border-radius: 1rem;
     padding: 1rem;
     background-color: #14C38E; }
@@ -249,12 +169,14 @@ section p {
     .flexVideo .cajaVideo h2 {
       text-align: center;
       text-shadow: 3px 3px 4px #393a39;
-      color: #070707;
+      color: black;
+      color: black;
       text-transform: uppercase;
       font-size: 1.3rem;
-      padding: 1,6rem;
+      padding: 1.6rem;
       margin: 1rem; }
 
+/*creacion de redes sociales*/
 .footerContainer {
   display: flex;
   justify-content: space-between;
@@ -266,9 +188,18 @@ section p {
       .footerContainer nav ul li a img:hover {
         transform: translateX(15px);
         transition: all 0,2s linear ease ease-out; }
-  .footerContainer p {
-    background-color: #f3f4f4;
-    box-shadow: 12px 15px 6px 3px #b7b7a4;
-    padding: 1.5rem;
-    margin: 1rem;
-    font-size: 1.5rem; }
+
+@media screen and (max-width: 735px) {
+  .flexImagen {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+  .gridContainer {
+    grid-template-areas: "implementar implementar" "capacitar capacitar" "auditar auditar" "tramitar tramitar"; }
+  .flexVideo {
+    display: flex;
+    flex-wrap: wrap; }
+  .cursosContainer {
+    grid-template-areas: "calidad calidad" "seguridad seguridad" "procesos procesos" "regulacion regulacion"; }
+  .serviciosContainer {
+    grid-template-areas: "sistemas sistemas" "auditorias auditorias" "capacitacion capacitacion" "tramites tramites" "asesor asesor"; } }

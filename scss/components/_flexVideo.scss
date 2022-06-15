@@ -1,0 +1,40 @@
+/*Aplico flexbox  a contenedor video*/
+
+.flexVideo{
+
+    width: 100% auto;
+    padding: 1rem;
+    margin:0.5rem;
+    display:flex;
+    align-items:center; 
+
+    .cajaVideo{
+
+        max-width: 100% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding:0.5rem;
+        margin: 0.5rem;
+
+        border: 0.12rem solid $colorBorder;
+        border-radius: 1rem;
+        padding: 1rem;
+        background-color: $colorPrincipal;
+
+        video{
+            width: 100%;
+            padding: 0.5rem ;
+            margin:0.3rem ;
+        }
+        h2{
+            text-align: center;
+            text-shadow: 3px 3px 4px $colorShadow;
+            color: $colorTitulos;
+            @include bolsa($colorTitulos,uppercase,1.3rem,1.6rem,1rem)
+        }
+       
+    }
+    
+}

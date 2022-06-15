@@ -1,0 +1,26 @@
+
+@import "base/variables";
+section{
+
+    .flexImagen{
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content: center;
+        width: 100% auto;
+        margin-top: 0.2rem;
+
+        img{
+            padding: 0.3rem;
+            margin: 0.5rem;
+            border-radius: 1rem;
+            width: 50%;
+
+        }
+
+        p{
+            @extend %parrafo;
+        }
+            
+        
+    }
+}
