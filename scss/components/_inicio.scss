@@ -1,0 +1,18 @@
+/*selector universal*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+
+
+/* modifico body*/
+
+body{
+    background-image: url("../imagenes/imagen.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

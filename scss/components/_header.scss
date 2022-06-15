@@ -1,0 +1,45 @@
+@import "base/variables";
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 12px 15px 6px 3px $colorShadow;
+    width: 100%;
+
+    .logo{
+        background-position: cover;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    .navegacion{
+        width: 90%;
+    }
+    .cajaUl{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+    }
+    .menu{
+        text-decoration: none;
+        padding: 0.4rem;
+        margin: 0.4rem;
+        color:$colorActive;
+        font-size: 1.3rem; 
+    }
+    a{
+        &:hover{
+            background-color: $colorHover;
+            color: $colorPrincipal;
+            border-radius: 10px;
+        }
+        &:active{
+            color: $colorActive;
+        }
+    }
+
+
+
+        
+}

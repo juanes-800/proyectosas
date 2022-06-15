@@ -1,0 +1,29 @@
+%imagen{
+    padding: 0.1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height:100% ;  
+}
+
+%area{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: 100%;
+    border: 0.12rem solid $colorBorder;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color:$colorPrincipal;
+    
+}
+
+%parrafo{
+    background-color: $colorParrafo;
+    box-shadow: 12px 15px 6px 3px $colorShadow ;
+    padding: 1.5rem;
+    margin:1rem;
+    font-size:1.5rem; 
+}

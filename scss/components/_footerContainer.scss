@@ -1,0 +1,32 @@
+/*creacion de redes sociales*/
+.footerContainer{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    nav{
+
+        ul{
+            list-style: none;
+            li{
+                a{
+                    img{
+                        width: 30px;
+                        &:hover{
+                            transform: translateX(15px);
+                            transition: all 0,2s linear ease ease-out;
+                        }
+                        
+                    }
+                    
+                
+                }
+            }
+        }
+    }
+
+    p{
+        @extend %parrafo;
+    }
+    
+}

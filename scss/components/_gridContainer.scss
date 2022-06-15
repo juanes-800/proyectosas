@@ -1,0 +1,130 @@
+/*implemento grid en el index*/
+@import "base/variables";
+@import "base/extends";
+.gridContainer{
+    width: 100% auto;
+    height: 100% auto;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 1rem;
+    grid-template-areas: 
+    "implementar capacitar" "auditar tramitar";
+
+    .implementar{
+        grid-area: implementar;
+        @extend %area;
+
+        img{
+            @extend %imagen; 
+        }
+            
+        div{
+            h2{
+                text-align: center;
+                text-shadow: 3px 3px 4px $colorShadow;
+                color: $colorTitulos;
+                text-transform: uppercase;
+                font-size: 1.3rem;
+                padding: 1,6rem;
+                margin: 1rem;
+            }
+    
+            p{
+               @extend %parrafo;
+            }
+        }
+
+        
+
+       
+    }
+
+    .capacitar{
+        grid-area: capacitar;
+        @extend %area;
+
+
+        img{
+            @extend %imagen; 
+        }
+        div{
+            h2{
+                text-align: center;
+                text-shadow: 3px 3px 4px $colorShadow;
+                color: $colorTitulos;
+                text-transform: uppercase;
+                font-size: 1.3rem;
+                padding: 1,6rem;
+                margin: 1rem;
+            }
+    
+            p{
+                @extend %parrafo;
+            }
+        }
+        
+       
+
+    }
+    
+
+    .auditar{
+        grid-area: auditar;
+        @extend %area;
+
+        img{
+            @extend %imagen; 
+        }
+
+       div{
+        h2{
+            text-align: center;
+            text-shadow: 3px 3px 4px $colorShadow;
+            color: $colorTitulos;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            padding: 1,6rem;
+            margin: 1rem; 
+        }
+
+        p{
+            @extend %parrafo;
+        }
+       }
+
+    }
+
+    .tramitar{
+        grid-area: tramitar;
+        @extend %area;
+
+    
+        img{
+            @extend %imagen; 
+        }
+        
+       div{
+        h2{
+            
+            text-align: center;
+            text-shadow: 3px 3px 4px $colorShadow;
+            color: $colorTitulos;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            padding: 1,6rem;
+            margin: 1rem;
+        }
+
+        p{
+            @extend %parrafo;
+        }
+       }
+       
+      
+    }
+
+}

@@ -1,0 +1,7 @@
+@mixin bolsa($colorTitulos, $textTransform, $fonsize, $padding,$margin) {
+    color: $colorTitulos;
+    text-transform:$textTransform;
+    font-size:$fonsize;
+    padding: $padding;
+    margin:$margin;    
+}
