@@ -39,5 +39,6 @@ visión hacia donde llevamos nuestras empresas de aseorias
 
 Los h2 y h1 de  la sección  curso permanecen igual,  los comentarios de las imagenes y videos que daron igual
 elimino parrafo del index para dar una mejor presentacion a la pagina
+cambio formato de todas la imagenes a webp
 
 
