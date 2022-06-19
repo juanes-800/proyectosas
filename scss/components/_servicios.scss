@@ -1,0 +1,27 @@
+/*modificando propidades web servicios*/
+
+.medidaImagen{
+    width: 40%;
+}
+
+.flexContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600px;
+    font-size: 20px;
+    color: $colorBoton1;
+    background-color: $colorBoton2;
+    border-radius: 6px;
+    border: 2px solid $colorTitulos;
+    margin: 2rem;;
+}
+.boton:hover{
+    color: $colorBoten;
+    background-color: $colorBoton1;
+}

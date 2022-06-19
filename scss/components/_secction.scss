@@ -4,7 +4,8 @@ section{
     h1{
         text-align: center;
         text-shadow: 3px 3px 4px $colorShadow ;
-        @include bolsa($colorTitulos,uppercase,1.6rem,1.8rem,1.5rem,);
+        @extend %titulos1;
+       
     } 
 
     p{
