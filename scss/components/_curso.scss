@@ -1,0 +1,28 @@
+.gridContainer{
+    .implementar{
+        ol{
+            @extend %parrafo;
+            @extend %listas;
+        }
+    }
+    .capacitar{
+        ol{
+            @extend %parrafo;
+            @extend %listas;
+
+        }
+    }
+    .auditar{
+        ol{
+            @extend %parrafo;
+            @extend %listas;
+        }
+    }
+    .tramitar{
+        ol{
+            @extend %parrafo;
+            @extend %listas;
+        }
+    }
+}
+   

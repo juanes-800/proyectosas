@@ -1,0 +1,21 @@
+/*modificando propidades web nosotros*/
+section{
+    h2{
+        text-align: center;
+        text-shadow: 3px 3px 4px $colorShadow;
+        @extend %titulos2;
+      
+    }
+
+    ul{
+        @extend %parrafo;
+        @extend %listas;
+    }
+}
+
+footer{
+    p{
+        @extend %parrafo;  
+    } 
+}
+  
