@@ -1,4 +1,5 @@
 /*mixin de propiedades de los titulos*/
+
 @mixin bolsa($colorTitulos, $textTransform, $fonsize, $padding,$margin) {
     color: $colorTitulos;
     text-transform:$textTransform;
