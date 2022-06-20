@@ -1,7 +1,7 @@
 {
   "name": "proyectosas",
   "version": "1.0.0",
-  "description": "",
+  "description": "El proyecto consiste en realizar una pagina web de asesorias en todo lo relacinado en la industria de alimentos, desde la inocuidad del alimentos hasta la investigacion y desarrollo de nuevos productos donde los usiarios puedan observar nuestros servicios que prestamos como compañia",
   "main": "index.js",
   "dependencies": {
     "abbrev": "^1.1.1",
