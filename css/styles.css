@@ -44,7 +44,7 @@ body {
   .contenedor a:active {
     color: #8c2721; }
 
-/* segmento de todos los 5 html en la prate principal*/
+/* segmento de todos los 5 html en la parte principal*/
 section .flexImagen {
   display: flex;
   flex-direction: row-reverse;
@@ -57,12 +57,13 @@ section .flexImagen {
     border-radius: 1rem;
     width: 50%; }
 
+/*seccion de la web index*/
 /*mixin de propiedades de los titulos*/
 section h1 {
   text-align: center;
   text-shadow: 3px 3px 4px #393a39; }
 
-/*implemento grid en el index, nosotros, cursos*/
+/*implemento grid en el index, nosotros, cursos, servicios*/
 /* medidas de las imagenes*/
 .gridContainer .implementar img, .gridContainer .capacitar img, .gridContainer .auditar img, .gridContainer .tramitar img {
   width: 80%; }
@@ -202,6 +203,8 @@ section h2 {
   color: #151616;
   background-color: #ffffff; }
 
+/* se modifaca propiedades de la web recursos*/
+/*media queries*/
 @media screen and (max-width: 735px) {
   .flexImagen {
     display: flex;
