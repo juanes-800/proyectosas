@@ -23,7 +23,6 @@
     &:hover{
         color: $colorBoten;
         background-color: $colorBoton1;
-        transform: scale(1.2);
-        transition: all;
+        @extend %poder;
     }
 }

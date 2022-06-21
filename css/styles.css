@@ -23,9 +23,6 @@ body {
     background-position: cover;
     padding: 0.5rem;
     margin: 0.5rem; }
-    .contenedor .logo:hover {
-      transform: scale(1.1);
-      transition: all; }
   .contenedor .navegacion {
     width: 90%; }
   .contenedor .cajaUl {
@@ -106,6 +103,10 @@ section h1 {
 /*propiedades web servicios*/
 section ul, .gridContainer .implementar ol, .gridContainer .capacitar ol, .gridContainer .auditar ol, .gridContainer .tramitar ol {
   list-style-position: inside; }
+
+.contenedor .logo:hover, .boton:hover {
+  transform: scale(1.1);
+  transition: all; }
 
 .gridContainer {
   width: 100% auto;
@@ -204,9 +205,7 @@ section h2 {
   margin: 2rem; }
   .boton:hover {
     color: #151616;
-    background-color: #ffffff;
-    transform: scale(1.2);
-    transition: all; }
+    background-color: #ffffff; }
 
 /* se modifaca propiedades de la web recursos*/
 /*media queries*/
