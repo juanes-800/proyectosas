@@ -104,6 +104,10 @@ section h1 {
 section ul, .gridContainer .implementar ol, .gridContainer .capacitar ol, .gridContainer .auditar ol, .gridContainer .tramitar ol {
   list-style-position: inside; }
 
+.contenedor .logo:hover, .boton:hover {
+  transform: scale(1.1);
+  transition: all; }
+
 .gridContainer {
   width: 100% auto;
   padding: 1rem;
@@ -199,10 +203,9 @@ section h2 {
   border-radius: 6px;
   border: 2px solid black;
   margin: 2rem; }
-
-.boton:hover {
-  color: #151616;
-  background-color: #ffffff; }
+  .boton:hover {
+    color: #151616;
+    background-color: #ffffff; }
 
 /* se modifaca propiedades de la web recursos*/
 /*media queries*/
@@ -212,10 +215,7 @@ section h2 {
     flex-wrap: wrap;
     width: 100%; }
   .gridContainer {
-    grid-template-areas: "implementar implementar"
- "capacitar capacitar"
- "auditar auditar"
- "tramitar tramitar"; }
+    grid-template-areas: "implementar implementar" "capacitar capacitar" "auditar auditar" "tramitar tramitar"; }
   .flexVideo {
     display: flex;
     flex-wrap: wrap; } }
