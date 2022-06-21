@@ -1,27 +1,31 @@
 /*media queries*/
 @media screen and (max-width: 735px){
-
-    .flexImagen{
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-    
-    }
+  .flexImagen{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   
-    .gridContainer{
-   
-      grid-template-areas: 
-      "implementar implementar"
-      "capacitar capacitar"
-      "auditar auditar"
-      "tramitar tramitar"
-      ;
-      
-    }
-  
-    .flexVideo{
-      display: flex;
-      flex-wrap: wrap;
-    }
   }
+  .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+
+  .gridContainer{
+ 
+    grid-template-areas: 
+    "implementar implementar"
+    "capacitar capacitar"
+    "auditar auditar"
+    "tramitar tramitar"
+    ;
+    
+  }
+
+  .flexVideo{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
   
