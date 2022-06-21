@@ -12,6 +12,12 @@
         background-position: cover;
         padding: 0.5rem;
         margin: 0.5rem;
+        
+        &:hover{
+            transform: scale(1.1);
+            transition: all;
+        }
+        
     }
     .navegacion{
         width: 90%;

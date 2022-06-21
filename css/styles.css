@@ -23,6 +23,9 @@ body {
     background-position: cover;
     padding: 0.5rem;
     margin: 0.5rem; }
+    .contenedor .logo:hover {
+      transform: scale(1.1);
+      transition: all; }
   .contenedor .navegacion {
     width: 90%; }
   .contenedor .cajaUl {
@@ -199,10 +202,11 @@ section h2 {
   border-radius: 6px;
   border: 2px solid black;
   margin: 2rem; }
-
-.boton:hover {
-  color: #151616;
-  background-color: #ffffff; }
+  .boton:hover {
+    color: #151616;
+    background-color: #ffffff;
+    transform: scale(1.2);
+    transition: all; }
 
 /* se modifaca propiedades de la web recursos*/
 /*media queries*/
@@ -212,10 +216,7 @@ section h2 {
     flex-wrap: wrap;
     width: 100%; }
   .gridContainer {
-    grid-template-areas: "implementar implementar"
- "capacitar capacitar"
- "auditar auditar"
- "tramitar tramitar"; }
+    grid-template-areas: "implementar implementar" "capacitar capacitar" "auditar auditar" "tramitar tramitar"; }
   .flexVideo {
     display: flex;
     flex-wrap: wrap; } }
