@@ -214,6 +214,9 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     width: 100%; }
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap; }
   .gridContainer {
     grid-template-areas: "implementar implementar" "capacitar capacitar" "auditar auditar" "tramitar tramitar"; }
   .flexVideo {
