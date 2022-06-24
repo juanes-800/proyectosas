@@ -48,3 +48,8 @@
     transition: all;
 }
 
+%compartir{
+    @extend %parrafo;
+    @extend %listas;
+}
+
