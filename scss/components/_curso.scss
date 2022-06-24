@@ -3,27 +3,22 @@
 .gridContainer{
     .implementar{
         ol{
-            @extend %parrafo;
-            @extend %listas;
+            @extend %compartir;
         }
     }
     .capacitar{
         ol{
-            @extend %parrafo;
-            @extend %listas;
-
+            @extend %compartir;
         }
     }
     .auditar{
         ol{
-            @extend %parrafo;
-            @extend %listas;
+            @extend %compartir;
         }
     }
     .tramitar{
         ol{
-            @extend %parrafo;
-            @extend %listas;
+            @extend %compartir;
         }
     }
 }
